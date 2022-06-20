@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ubuntu:wght@300&display=swap');
+/* https://tailwindcomponents.com/component/cards-4 */
+body{
+    background: #e2e9fc;
+}
+fieldset {
+    border: none;
+}
+header{
+    background: rgb(4,148,196);
+    background: linear-gradient(180deg, rgb(1, 135, 182) 0%, rgb(1, 144, 167) 62%);
+    height: 75px;
+    padding: 22px;
+    color:white;
+    width: 100%;
+    -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+.logotype{
+    float:left;
+    position: relative;
+    font-size: 20px;
+    padding: 0 0 0 50px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: normal;
+}
+nav{
+    padding: 0;
+    float: left;
+    position: relative;
+    left: 20%;
+}
+nav > ul {
+
+}
+nav > ul > li {
+    display: inline-block;
+
+}
+nav > ul > li > a{
+    margin-right: 15px;
+    display: block;
+padding: 4px;
+    transition: 0.3s;
+    border-radius: 2px;
+
+}
+nav > ul > li > a:hover{
+    background: #002d65;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.auth{
+    position: relative;
+    float: right;
+    color: white;
+    display: inline-block;
+    padding: 4px 50px 0 0 ;
+
+}
+.auth > ul > li {
+display: inline-block;
+}
+.auth > ul > li > a {
+    display:block;
+    margin-left: 20px;
+
+}
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #013a71;  /*Set to match the Tailwind colour you want the active one to be */
+}
+.carousel{
+    background: #000;
+}
+.carousel-item img{
+    opacity: 0.3;
+}
+.carousel-inner label {
+    color:white;
+    background: rgb(1, 98, 130);
+    font-size: 30px;
+    height: 40px;
+    width: 20px;
+    padding: 0;
+    opacity: 0.5;
+
+}
+.carousel-indicators label {
+    font-size: 40px;
+    background: none;
+    opacity: 1;
+}
+.informationSlider {
+z-index: 3 ;
+    color: white;
+    display: block;
+    position: absolute;
+    padding: 150px;
+}
+.informationSlider h1{
+    font-size: 25px;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+}
+.informationSlider p {
+font-size: 20px;
+    max-width: 700px;
+}
+.informationSlider button{
+    margin: 30px 0 0 0 ;
+    color: #fff;
+    background: rgb(4, 136, 180);;
+    border: 1px solid rgb(4, 136, 180);
+    transition: 0.3s;
+    font-weight: bold;
+    width: 200px;
+
+}
+.informationSlider button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(4, 136, 180);;
+    transition: 0.3s;
+
+}
+footer{
+    background: rgb(4,148,196);
+    background: linear-gradient(180deg, rgb(1, 110, 147) 0%, rgb(0, 108, 125) 62%);
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.footer a {
+    color:white;
+}
+.footer a:hover{
+    color: #e2e9fc;
+}
+
+
+.socialmg{
+    font-size: 30px;
+}
+.socialmg a {
+    margin-right: 15px;
+    color:white;
+}
+.socialmg .in {
+    color: #a800b6;
+
+}
+
+.ind:active{
+    background: #000;
+}
+.abcom:active{
+    background: #000;
+}
+
+.aboutCompany{
+    border-radius: 10px;
+    float:left;
+    background: #fff;
+    padding: 50px;
+max-width: 950px;
+
+
+}
+.aboutCompany h1{
+    font-size: 26px;
+}
+.aboutCompany p{
+    max-width: 655px;
+    margin: 0 0 50px 0;
+}
+.aboutCompany h2{
+    font-size: 23px;
+}
+.imageAb{
+    background: #fff;
+   box-sizing: border-box;
+
+}
+.imageAb img{
+    box-sizing: border-box;
+
+    height: 465px;
+    max-width: 690px;
+}
+.uch{
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.uch h1{
+    background: #0067b1;
+    display: block;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+.shopc{
+    position: relative;
+float: right;
+font-size: 25px;
+color: #ffffff;
+transition: 0.3s;
+}
+.qual{
+    display: block;
+    position: absolute;
+    top:26px;
+    background: #000;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    right: -5px;
+    color:white;
+    border: 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.shopc a:hover{
+    color: #050505;
+    transition: 0.3s;
+}
+.buttonName{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: 0.3s;
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.buttonName:hover{
+    color: #002d65;
+    background: #fff;
+    transition: 0.3s;
+}
+.dritem{
+    color: #0067b1;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+
+}
+.dritem:hover{
+    color: white;
+    background: #0067b1;
+    transition: 0.3s;
+}
+
+.TableForAdmin {
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.TableForAdmin th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 5px 9px;
+}
+.TableForAdmin th, TableForAdmin td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+.TableForAdmin i {
+    font-size: 17px;
+}
+.TableForAdmin th:first-child, td:first-child {
+    text-align: left;
+}
+.TableForAdmin th:first-child {
+    border-top-left-radius: 10px;
+}
+.TableForAdmin th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+.TableForAdmin td {
+    padding: 5px 10px;
+    background: #eff8e9;
+}
+
+.stat{
+margin: 70px 0 0 300px;
+
+}
+
+.lastOrders h2{
+    margin: 20px 0 20px 0;
+text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.profile{
+    margin: 50px 0 200px 0;
+display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.profileContent{
+    position: relative;
+    background: #000;
+    border-radius: 20px
+}
+.profileContent img{
+z-index: -999;
+    width: 1100px;
+    height: 380px;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+.userInformation{
+position: absolute;
+z-index: 999;
+padding: 40px 0 0 60px;
+color:white;
+
+}
+.userInformation h3{
+
+    font-size: 18px;
+    margin: 10px 0 0 0 ;
+
+
+}
+.userInformation b {
+
+    margin: 0 3px 0 0;
+    font-weight: 500;
+    font-size: 19px;
+    text-shadow: 1px 1px #b1b0b0;
+}
+
+.userInformation h2{
+    font-weight: 500;
+    font-size: 18px;
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+    float: right;
+   left: 450px;
+    position: absolute;
+}
+
+.userInformation h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+.editUserInformation{
+    position: absolute;
+    right: 40px;
+    top:40px;
+    float: right;
+    z-index: 2;
+    color: white;
+    font-size: 25px;
+}
+.formEditProfile{
+    background: url("../image/profilebg.jpg");
+opacity: 0.3;
+    z-index: -9999;
+}
+.smarth h1{
+    font-size: 23px;
+}
+.pricebuy{
+    position: relative;
+}
+.pricebuy h1{
+    font-weight: 600;
+    font-size: 23px;
+float: left;
+    display: block;
+}
+.pricebuy a{
+    font-size: 30px;
+    display: block;
+float: right;
+    color: #1f75fe;
+transition: 0.3s;
+}
+.pricebuy a:hover{
+   color: #ffc800;
+    transition: 0.3s;
+
+}
+.characteristics{
+    font-size: 18px;
+}
+.characteristics h2{
+    font-weight: 500;
+    font-size: 19px;
+}
+.clearCart{
+    margin: 30px 0 0 0;
+    display: block;
+    padding: 5px;
+    color:white;
+    background: #1f75fe;
+    width: 230px;
+    text-align: center;
+    transition: 0.3s;
+}
+.clearCart:hover{
+    background: #002658;
+    transition: 0.3s;
+}
+.addOrders input{
+    font-size: 17px;
+    padding: 7px;
+    width: 325px;
+    border-radius: 6px;
+}
+.addOrders select{
+    margin: 2px 0 0 0;
+padding: 9px;
+    border-radius: 6px ;
+    width: 325px;
+}
+
+.addOrders p{
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 0  5px 0 ;
+}
+
+.conacts{
+
+    background: white;
+    margin: 50px 0  0  0;
+}
+
+.contactInformation {
+padding: 10px 50px;
+}
+.contactInformation h1{
+    font-weight:600;
+    font-size:23px;
+}
+.contactInformation p{
+    font-size: 17px;
+}
+
+.map{
+    padding: 0 0 0 50px;
+
+}
+.map h2{
+    display: block;
+    font-size: 21px;
+
+    font-weight: 600;
+    padding: 0 0 5px 0;
+}
+.map iframe{
+
+    border-radius: 10px;
+}
